@@ -4,7 +4,7 @@
 @import url("inc/owl-carousel/owl.theme.default.css");
 @import url("https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap");
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Open Sans","Helvetica Neue","Inter", sans-serif;
   font-size: 15px;
   line-height: 1.55rem;
   letter-spacing: -0.015rem;
