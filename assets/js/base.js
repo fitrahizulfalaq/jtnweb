@@ -13,7 +13,7 @@ if ('serviceWorker' in navigator) {
 $(document).ready(function () {
     setTimeout(() => {
         $("#loader").fadeToggle(250);
-    }, 700); // hide delay when page load
+    }, 10); // hide delay when page load
 });
 ///////////////////////////////////////////////////////////////////////////
 
@@ -165,7 +165,9 @@ $('.carousel-full').owlCarousel({
     margin: 0,
     nav: false,
     items: 1,
-    dots: false,
+    autoplay:true,
+    autoplayTimeout:4000,
+    dots: true,
 });
 $('.carousel-single').owlCarousel({
     stagePadding: 30,
@@ -173,6 +175,8 @@ $('.carousel-single').owlCarousel({
     margin: 16,
     nav: false,
     dots: false,
+    autoplay:true,
+    autoplayTimeout:4000,
     responsiveClass: true,
     responsive: {
         0: {
@@ -191,6 +195,8 @@ $('.carousel-multiple').owlCarousel({
     nav: false,
     items: 2,
     dots: false,
+    autoplay:true,
+    autoplayTimeout:1000,
     responsiveClass: true,
     responsive: {
         0: {
@@ -526,3 +532,7 @@ dmswitch.on('change', function () {
 });
 ///////////////////////////////////////////////////////////////////////////
 
+/////////////// CUSTOM JS
+
+
+////////////////
